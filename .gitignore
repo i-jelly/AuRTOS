@@ -1,0 +1,12 @@
+*.exe
+*.obj
+*.bin
+*.elf
+*.hex
+*.log
+*.*log*
+
+settings/
+vs/
+vscode/
+build/
