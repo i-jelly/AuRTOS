@@ -20,4 +20,7 @@
 // 针对有不同内存分区的单片机
 #define osMemLocateAddrBegin 0x20000000
 #define osMemLocateAddrEnd 0x2001FFFF
+
+#define osUseFullAsert 0 // 使用assert?
+
 #endif /* OSCONFIG_H_ */

@@ -113,7 +113,7 @@ void auOsStartFirstThread()
 
 	TrigScheduler();
 
-	OsErrorHandler(); // 来这肯定又问题
+	OsErrorHandler(); // 来这肯定有问题
 }
 
 void portSysTick(void *v)

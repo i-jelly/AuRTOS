@@ -34,15 +34,19 @@ typedef void (*RunPtr)(void *);
 #define AU_SET_LOCATION_AFTER(x) __attribute__((section(x)))
 // 放在data ram的数据，bootstrap程序若没有初始化此区域需要手动补
 #define AU_RAM_DATA_AFTER AU_SET_LOCATION_AFTER(".dtcmram")
-//
+// 放在instru ram的数据，同上
 #define AU_RAM_FUNC_AFTER AU_SET_LOCATION_AFTER(".itcmram")
-// macros
-// 包装触发中断
+// 以上两块内存区域与一般SRAM内存区别在于与Cortex内核耦合更紧密，普通SRAM内存主频只有内核频率的一半，而*tcmram频率与内核相同
+// 一般存在于M4/M7内核中，M3内核无此内存
+//  macros
+//  包装触发中断
+// 此操作使中断标志位置1，内核会在其余中断结束后处理此中断
 #define TrigScheduler()                      \
 	do                                       \
 	{                                        \
 		SCB->ICSR |= SCB_ICSR_PENDSVSET_Msk; \
 	} while (0)
+
 // 使用内核指令保证操作原子性
 // 未验证，目前没用到
 #define WriteOnce(data, address)                            \

@@ -78,6 +78,7 @@ target_sources(
     "Core\\Src\\auOsThread.c"
 	"Core\\Src\\auOsMailbox.c"
 	"Core\\Src\\auLib.c"
+	"Core\\Src\\auOsAtomic.c"
     "Core\\Src\\gpio.c"
     "Core\\Src\\main.c"
     "Core\\Src\\stm32h7xx_hal_msp.c"
