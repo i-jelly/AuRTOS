@@ -15,7 +15,7 @@ extern void **auOsThread;
 extern void *PendSV_Call;
 extern void *auOsThreadSPRefresh();
 
-AU_INLINE_BEFORE void ThreadSwitch()
+AU_NAKED_BEFORE void ThreadSwitch()
 {
 	__asm volatile("LDR       R0, =auOsThread");
 	__asm volatile("LDR       R12, [R0]");

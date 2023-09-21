@@ -61,4 +61,7 @@ typedef void (*RunPtr)(void *);
 // 内存块在内存池中占用情况,
 #define auOsMemkOccupyMsk (((auRegLen)0x1U) << (sizeof(auRegLen) * 8 - 1))
 
+#define auOsSigStopKernel "Oyasumi"
+#define auOsSigStartKernel "Ohayo"
+
 #endif /* INC_AUOSDEFINES_H_ */

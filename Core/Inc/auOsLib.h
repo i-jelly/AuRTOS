@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////
 //@Author: 			Xenohoshi,
 //@File: 			BaseLib.h
-//@Brief:			high performence compute lib for Embeded system(MCU)
+//@Brief:			high performence compute lib for Embedded system(MCU)
 ///////////////////////////////////////////////////////////////////////////
 
 #pragma once
@@ -36,6 +36,6 @@ bool libParityUint8(uint8_t x);
 uint32_t libCountZeroBitsRight(uint32_t x);
 uint32_t libCountZeroBitsLeft(uint32_t x);
 #else
-#error "THIS LIB REQUIRES GCC COMPILER TO WORK!"
+// #error "THIS LIB REQUIRES GCC COMPILER TO WORK!"
 #endif
 #endif

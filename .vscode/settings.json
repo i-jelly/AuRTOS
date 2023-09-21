@@ -4,5 +4,6 @@
   "files.associations": {
     "tim.h": "c",
     "stm32h7xx_hal.h": "c"
-  }
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
