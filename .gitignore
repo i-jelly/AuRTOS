@@ -10,3 +10,7 @@ settings/
 vs/
 vscode/
 build/
+cmake/
+.vs/
+.vscode/
+.settings/

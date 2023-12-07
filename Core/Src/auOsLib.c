@@ -19,7 +19,7 @@
 //		@v0.1.1: date 2018.03. change bit swap from func to macro
 //		@v0.1: date 2018.03. Init, add bit swap
 ///////////////////////////////////////////////////////////////////////////
-#include "auLib.h"
+#include "auOsLib.h"
 
 /// @brief counting bits set in value, O(n), do NOT use when CPU supports SIMD instructions
 /// @param value value to compute

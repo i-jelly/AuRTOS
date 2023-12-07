@@ -23,4 +23,11 @@
 
 #define osUseFullAsert 0 // 使用assert?
 
+#ifdef osUseFullAsert
+#define assert(expr) ((expr) ? (void)0 : failed())
+void failed();
+#else
+#define assert(expr) ((void)0)
+#endif
+
 #endif /* OSCONFIG_H_ */

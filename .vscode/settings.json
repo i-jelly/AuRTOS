@@ -2,8 +2,10 @@
   "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
   "cmake.configureOnOpen": true,
   "files.associations": {
-    "tim.h": "c",
-    "stm32h7xx_hal.h": "c"
-  },
+	"tim.h": "c",
+	"stm32h7xx_hal.h": "c",
+	"auoslib.h": "c",
+	"auostypes.h": "c"
+},
   "C_Cpp.errorSquiggles": "disabled"
 }
